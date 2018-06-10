@@ -1,0 +1,21 @@
+
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="AddressBook-Popup" transform="translate(-350.000000, -323.000000)">
+            <g id="Group-5" transform="translate(80.000000, 60.000000)">
+                <g id="Group-3" fill="#FFFFFF" stroke="#AAAAAA">
+                    <g id="Group-77" transform="translate(0.000000, 22.000000)">
+                        <g id="Group-37-Copy-47" transform="translate(250.000000, 222.000000)">
+                            <g id="recipient">
+                                <g id="Group-33" transform="translate(20.000000, 19.000000)">
+                                    <rect id="Rectangle-17" x="0.5" y="0.5" width="15" height="15" rx="3"></rect>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+                <path d="M277.578013,274.624354 C277.110136,275.125215 276.352953,275.125215 275.887071,274.624354 L273.35016,271.905682 C272.88328,271.405823 272.88328,270.594428 273.35016,270.093567 C273.818037,269.592706 274.574222,269.592706 275.041101,270.093567 L276.732043,271.905682 L280.959896,267.374894 C281.425778,266.875035 282.182961,266.875035 282.64984,267.374894 C283.11672,267.874753 283.11672,268.68715 282.64984,269.188011 L277.578013,274.624354" id="Imported-Layers" fill="#444444"></path>
+            </g>
+        </g>
+    </g>
+</svg>

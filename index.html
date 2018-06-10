@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>AddressBook Popup</title>
+    <link href="img/favicon.png?v=2" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <script type="text/javascript" defer src="js/svg4everybody.min.js"></script>
+    <script type="text/javascript" defer src="js/app.min.js"></script>
+  </head>
+  <body>
+    <div class="popup">
+      <div class="popup__background"></div>
+      <div class="popup__wrapper">
+        <button class="btn btn_window" type="button" title="Close"> 
+          <svg class="icon icon_light" width="12" height="12" viewbox="0 0 12 12">
+            <use xlink:href="images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+        <div class="window flex-block">
+          <!-- Sidebar-->
+          <div class="sidebar">
+            <div class="sidebar__elem">
+              <h2 class="caption">Contacts</h2>
+              <div class="sidebar__list">
+                <button class="btn btn_full-width sidebar__item sidebar__item_active" type="button" title="All Contacts">All Contacts</button>
+                <button class="btn btn_full-width sidebar__item" type="button" title="Shared Contacts">Shared Contacts</button>
+              </div>
+            </div>
+            <div class="sidebar__elem">
+              <div class="flex-block flex-block_vertical-center">
+                <h2 class="caption">Groups</h2>
+                <button class="btn btn_add" type="button" title="Add new group">
+                  <svg class="icon" width="16" height="16" viewbox="0 0 16 16">
+                    <use xlink:href="images/icons.svg#icon-add"></use>
+                  </svg>
+                </button>
+              </div>
+              <div class="sidebar__list">
+                <button class="btn btn_full-width sidebar__item" type="button" title="My Favorites">My Favorites</button>
+                <button class="btn btn_full-width sidebar__item" type="button" title="Business">Business</button>
+                <button class="btn btn_full-width sidebar__item" type="button" title="Head Office &amp; Logistics">Head Office & Logistics</button>
+                <button class="btn btn_full-width sidebar__item" type="button" title="International Contacts">International Contacts</button>
+              </div>
+            </div>
+          </div>
+          <!--window content			-->
+          <div class="window__content">
+            <div class="flex-block flex-block_vertical-center window__header">
+              <button class="btn btn_add flex-block flex-block_vertical-center" type="button" title="Add new">
+                <svg class="icon" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-add"></use>
+                </svg><span class="btn__text">Add new</span>
+              </button>
+              <form class="search" action="/" name="search" method="GET">
+                <svg class="icon icon_dark search__icon" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-search"></use>
+                </svg>
+                <input class="search__input" name="search" placeholder="Search" title="Type to search" role="search">
+              </form>
+            </div>
+            <div class="window__toolbar flex-block flex-block_vertical-center">
+              <label class="inp-check">
+                <input class="inp-check__input" type="checkbox" title="Select all"><span class="inp-check__label inp-check__label_half"></span>
+              </label><span class="sort flex-block flex-block_vertical-center"><span class="sort__text">Sort by:</span>
+                <button class="btn btn_sort flex-block flex-block_vertical-center" type="button" title="Selecting the sort type"><span class="btn__text">Kind</span>
+                  <svg class="icon icon_dark" width="10" height="6" viewbox="0 0 10 6">
+                    <use xlink:href="images/icons.svg#icon-sort"></use>
+                  </svg>
+                </button></span>
+              <div class="vertical-line"></div>
+              <button class="btn window__toolbar-icon" button="button" title="Create group">
+                <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-creategroup"></use>
+                </svg>
+              </button>
+              <button class="btn window__toolbar-icon" button="button" title="Edit">
+                <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-edit"></use>
+                </svg>
+              </button>
+              <button class="btn window__toolbar-icon" button="button" title="Share">
+                <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-share"></use>
+                </svg>
+              </button>
+              <button class="btn window__toolbar-icon" button="button" title="Delete">
+                <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                  <use xlink:href="images/icons.svg#icon-trash"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="window__contacts">
+              <div class="contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/DB.png" alt="Douglas Barnett"/></div>
+                <p class="contact__name">Douglas Barnett</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:moshe_gutkowski@adrianna.us" title="Send message to moshe_gutkowski@adrianna.us">moshe_gutkowski@adrianna.us</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+              <div class="contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/IL.png" alt="Iva Little"/></div>
+                <p class="contact__name">Iva Little</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:kaitlyn.rice@yahoo.com" title="Send message to kaitlyn.rice@yahoo.com">kaitlyn.rice@yahoo.com</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+              <div class="contact_active contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact" checked="checked"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/JL.png" alt="Jeremiah Lamb"/></div>
+                <p class="contact__name">Jeremiah Lamb</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:dorcas.collier@yahoo.com" title="Send message to dorcas.collier@yahoo.com">dorcas.collier@yahoo.com</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+              <div class="contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/girl1.png" alt="Daisy Carlson"/></div>
+                <p class="contact__name">Daisy Carlson</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:melyna_pagac@hotmail.com" title="Send message to melyna_pagac@hotmail.com">melyna_pagac@hotmail.com</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+              <div class="contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/girl.png" alt="Sallie Graves"/></div>
+                <p class="contact__name">Sallie Graves</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:maribel.mraz@goodwin.biz" title="Send message to maribel.mraz@goodwin.biz">maribel.mraz@goodwin.biz</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+              <div class="contact flex-block flex-block_vertical-center">
+                <div class="contact__checkbox">
+                  <label class="inp-check">
+                    <input class="inp-check__input" type="checkbox" title="Select contact"/>
+                    <div class="inp-check__label"></div>
+                  </label>
+                </div>
+                <div class="contact__image"><img src="images/girl.png" alt="Sallie Graves"/></div>
+                <p class="contact__name">Sallie Graves</p>
+                <p class="contact__mail"><a class="contact__mail-text" href="mailto:maribel.mraz@goodwin.biz" title="Send message to maribel.mraz@goodwin.biz">maribel.mraz@goodwin.biz</a></p>
+                <div class="dropdown">
+                  <button class="btn btn_contact" type="button" title="More">
+                    <svg class="icon" width="16" height="4" viewbox="0 0 16 4">
+                      <use xlink:href="images/icons.svg#icon-more"></use>
+                    </svg>
+                  </button>
+                  <div class="dropdown__window">
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Edit"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-edit"></use>
+                        </svg></span><span class="dropdown__item-text">Edit</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Share"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-share"></use>
+                        </svg></span><span class="dropdown__item-text">Share</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete from Group"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="12" height="12" viewbox="0 0 12 12">
+                          <use xlink:href="images/icons.svg#icon-cross"></use>
+                        </svg></span><span class="dropdown__item-text">Delete from Group</span></button>
+                    <button class="btn btn_full-width dropdown__item flex-block flex-block_vertical-center" type="button" aria-label="Delete"> <span class="dropdown__item-img"> 
+                        <svg class="icon icon_dark" width="16" height="16" viewbox="0 0 16 16">
+                          <use xlink:href="images/icons.svg#icon-trash"></use>
+                        </svg></span><span class="dropdown__item-text">Delete</span></button>
+                  </div>
+                </div>
+                <svg class="contact__draganddrop" width="10" height="10" viewbox="0 0 10 10">
+                  <use xlink:href="images/icons.svg#icon-draganddrop"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="flex-block flex-block_vertical-center window__footer">
+              <p>1 contacts selected</p>
+              <button class="btn btn_send" type="button" title="Send to">Send to</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
