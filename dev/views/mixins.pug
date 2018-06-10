@@ -1,0 +1,46 @@
+mixin contact(image, name, email, active)
+
+	if active
+		- var classActive = 'contact_active'
+		- var checked = true
+	else
+		- var classActive = ''
+		- var checked = false
+
+	div(class=classActive).contact.flex-block.flex-block_vertical-center
+		.contact__checkbox
+			label.inp-check
+				input(type="checkbox" title="Select contact" checked=checked).inp-check__input
+				.inp-check__label
+		.contact__image
+			img(src="images/"+image alt=name)
+		p.contact__name= name
+		p.contact__mail
+			a(href="mailto:" + email title="Send message to " + email).contact__mail-text= email
+		.dropdown
+			button(type="button" title="More").btn.btn_contact
+				svg(width="16" height="4" viewbox="0 0 16 4").icon
+					use(xlink:href="images/icons.svg#icon-more")
+			.dropdown__window
+				button(type="button" aria-label="Edit").btn.btn_full-width.dropdown__item.flex-block.flex-block_vertical-center 
+					span.dropdown__item-img 
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-edit")
+					span.dropdown__item-text Edit
+				button(type="button" aria-label="Share").btn.btn_full-width.dropdown__item.flex-block.flex-block_vertical-center 
+					span.dropdown__item-img 
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-share")
+					span.dropdown__item-text Share
+				button(type="button" aria-label="Delete from Group").btn.btn_full-width.dropdown__item.flex-block.flex-block_vertical-center 
+					span.dropdown__item-img 
+						svg(width="12" height="12" viewbox="0 0 12 12").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-cross")
+					span.dropdown__item-text Delete from Group
+				button(type="button" aria-label="Delete").btn.btn_full-width.dropdown__item.flex-block.flex-block_vertical-center 
+					span.dropdown__item-img 
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-trash")
+					span.dropdown__item-text Delete
+		svg(width="10" height="10" viewbox="0 0 10 10").contact__draganddrop
+			use(xlink:href="images/icons.svg#icon-draganddrop")

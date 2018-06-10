@@ -1,0 +1,33 @@
+.inp-check
+	margin-right: 10px
+	display: block
+	min-width: 16px
+	height: 16px
+
+	&__label
+		position: relative
+		cursor: pointer
+		display: block
+		width: 16px
+		height: 16px
+
+	&__label::before
+		content: ''
+		position: absolute
+		top: 0
+		left: 0
+		width: 16px
+		height: 16px
+		background-image: url('../images/rect.svg')
+
+	&__input:checked + &__label::before
+		background-image: url('../images/rectwithtick.svg')
+
+	&__label_half::before
+		background-image: url('../images/rectwithline.svg')
+
+	&__input
+		position: absolute
+		left: -9999px
+		tabindex: -1
+		pointer-events: none

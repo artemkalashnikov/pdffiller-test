@@ -1,0 +1,73 @@
+.popup
+	.popup__background
+	.popup__wrapper
+		button(type="button" title="Close").btn.btn_window 
+			svg(width="12" height="12" viewbox="0 0 12 12").icon.icon_light
+				use(xlink:href="images/icons.svg#icon-cross")
+		.window.flex-block
+			// Sidebar
+			.sidebar
+				.sidebar__elem
+					h2.caption Contacts
+					.sidebar__list
+						button(type="button" title="All Contacts").btn.btn_full-width.sidebar__item.sidebar__item_active All Contacts
+						button(type="button" title="Shared Contacts").btn.btn_full-width.sidebar__item Shared Contacts
+				.sidebar__elem
+					.flex-block.flex-block_vertical-center
+						h2.caption Groups
+						button(type="button" title="Add new group").btn.btn_add
+							svg(width="16" height="16" viewbox="0 0 16 16").icon
+								use(xlink:href="images/icons.svg#icon-add")
+					.sidebar__list
+						button(type="button" title="My Favorites").btn.btn_full-width.sidebar__item My Favorites
+						button(type="button" title="Business").btn.btn_full-width.sidebar__item Business
+						button(type="button" title="Head Office & Logistics").btn.btn_full-width.sidebar__item Head Office & Logistics
+						button(type="button" title="International Contacts").btn.btn_full-width.sidebar__item International Contacts
+			//window content			
+			.window__content
+				.flex-block.flex-block_vertical-center.window__header
+					button(type="button" title="Add new").btn.btn_add.flex-block.flex-block_vertical-center
+						svg(width="16" height="16" viewbox="0 0 16 16").icon
+							use(xlink:href="images/icons.svg#icon-add")
+						span.btn__text Add new
+					form(action="/" name="search" method="GET").search
+							svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark.search__icon
+								use(xlink:href="images/icons.svg#icon-search")
+							input(name="search" placeholder="Search" title="Type to search" role="search").search__input
+				.window__toolbar.flex-block.flex-block_vertical-center
+					label.inp-check
+						input(type="checkbox" title="Select all").inp-check__input
+						span.inp-check__label.inp-check__label_half
+					span.sort.flex-block.flex-block_vertical-center
+						span.sort__text Sort by:
+						button(type="button" title="Selecting the sort type").btn.btn_sort.flex-block.flex-block_vertical-center
+							span.btn__text Kind
+							svg(width="10" height="6" viewbox="0 0 10 6").icon.icon_dark
+								use(xlink:href="images/icons.svg#icon-sort")
+					.vertical-line
+					button(button="button" title="Create group").btn.window__toolbar-icon
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-creategroup")
+					button(button="button" title="Edit").btn.window__toolbar-icon
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-edit")
+					button(button="button" title="Share").btn.window__toolbar-icon
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-share")
+					button(button="button" title="Delete").btn.window__toolbar-icon
+						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
+							use(xlink:href="images/icons.svg#icon-trash")
+				.window__contacts
+					+contact('DB.png', 'Douglas Barnett', 'moshe_gutkowski@adrianna.us')
+					+contact('IL.png', 'Iva Little', 'kaitlyn.rice@yahoo.com')
+					+contact('JL.png', 'Jeremiah Lamb', 'dorcas.collier@yahoo.com', 'active')
+					+contact('girl1.png', 'Daisy Carlson', 'melyna_pagac@hotmail.com')
+					+contact('girl.png', 'Sallie Graves', 'maribel.mraz@goodwin.biz')
+					+contact('girl.png', 'Sallie Graves', 'maribel.mraz@goodwin.biz')
+				.flex-block.flex-block_vertical-center.window__footer
+					p 1 contacts selected
+					button(type="button" title="Send to").btn.btn_send Send to
+
+
+
+

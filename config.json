@@ -1,0 +1,23 @@
+{
+    "js": [
+        "dev/js/polyfills.js",
+        "dev/js/functions.js",
+        "dev/js/init.js",
+        "dev/js/common.js"
+    ],
+    "src": {
+      "root": "dev",
+      "sass": "dev/sass",
+      "pug": "dev/views",
+      "js": "dev/js",
+      "fonts": "dev/fonts",
+      "images": "dev/img"
+    },
+    "build": {
+      "root": "build",
+      "css": "build/css",
+      "js": "build/js",
+      "fonts": "build/fonts",
+      "images": "build/images"
+    }
+}

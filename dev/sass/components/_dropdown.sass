@@ -1,0 +1,35 @@
+.dropdown
+	position: relative
+
+	&__window
+		display: none
+		position: absolute
+		top: 0
+		right: -13px
+		border-radius: 3px;
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2)
+		background-color: #ffffff
+		border: solid 1px #cccccc
+		width: 180px
+		z-index: 9999
+
+	&__item
+		padding: 8px 10px
+		color: #444
+
+	&__item-img
+		flex-basis: 16px
+
+	&__item-img svg
+		margin: 0 auto
+
+	&__item-text
+		padding-left: 10px
+		flex-grow: 8
+		flex-basis: 100px
+
+	&__item:hover, &__item:focus
+		background-color: #fafafa
+
+	&__item:active
+		background-color: #f0f0f0

@@ -1,0 +1,20 @@
+include ../settings
+doctype html
+html(lang=lang)
+    block pageSettings
+    head
+        meta(charset='utf-8')
+        if title
+            title #{title}
+        else
+            title (no title specified)
+        link(href=favicon+'?v=2', rel='shortcut icon', type='image/x-icon')
+        link(rel='stylesheet', href='css/style.min.css')
+        if responsive
+            meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        if noindex
+            meta(name='robots', content='noindex, nofollow')
+        script(type="text/javascript" defer src="js/svg4everybody.min.js")
+        script(type="text/javascript" defer src="js/app.min.js")
+    body
+        block pageContent
