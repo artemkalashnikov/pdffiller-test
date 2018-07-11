@@ -25,7 +25,7 @@
 						button(type="button" title="International Contacts").btn.btn_full-width.sidebar__item International Contacts
 			//window content			
 			.window__content
-				.flex-block.flex-block_vertical-center.window__header
+				.flex-block.flex-block_vertical-center.window__header.zebra
 					button(type="button" title="Add new").btn.btn_add.flex-block.flex-block_vertical-center
 						svg(width="16" height="16" viewbox="0 0 16 16").icon
 							use(xlink:href="images/icons.svg#icon-add")
@@ -34,7 +34,7 @@
 							svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark.search__icon
 								use(xlink:href="images/icons.svg#icon-search")
 							input(name="search" placeholder="Search" title="Type to search" role="search").search__input
-				.window__toolbar.flex-block.flex-block_vertical-center
+				.window__toolbar.flex-block.flex-block_vertical-center.zebra
 					label.inp-check
 						input(type="checkbox" title="Select all").inp-check__input
 						span.inp-check__label.inp-check__label_half
@@ -45,26 +45,26 @@
 							svg(width="10" height="6" viewbox="0 0 10 6").icon.icon_dark
 								use(xlink:href="images/icons.svg#icon-sort")
 					.vertical-line
-					button(button="button" title="Create group").btn.window__toolbar-icon
+					button(type="button" title="Create group").btn.window__toolbar-icon
 						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
 							use(xlink:href="images/icons.svg#icon-creategroup")
-					button(button="button" title="Edit").btn.window__toolbar-icon
+					button(type="button" title="Edit").btn.window__toolbar-icon
 						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
 							use(xlink:href="images/icons.svg#icon-edit")
-					button(button="button" title="Share").btn.window__toolbar-icon
+					button(type="button" title="Share").btn.window__toolbar-icon
 						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
 							use(xlink:href="images/icons.svg#icon-share")
-					button(button="button" title="Delete").btn.window__toolbar-icon
+					button(type="button" title="Delete").btn.window__toolbar-icon
 						svg(width="16" height="16" viewbox="0 0 16 16").icon.icon_dark
 							use(xlink:href="images/icons.svg#icon-trash")
-				.window__contacts
+				.window__contacts.zebra
 					+contact('DB.png', 'Douglas Barnett', 'moshe_gutkowski@adrianna.us')
 					+contact('IL.png', 'Iva Little', 'kaitlyn.rice@yahoo.com')
 					+contact('JL.png', 'Jeremiah Lamb', 'dorcas.collier@yahoo.com', 'active')
 					+contact('girl1.png', 'Daisy Carlson', 'melyna_pagac@hotmail.com')
 					+contact('girl.png', 'Sallie Graves', 'maribel.mraz@goodwin.biz')
 					+contact('girl.png', 'Sallie Graves', 'maribel.mraz@goodwin.biz')
-				.flex-block.flex-block_vertical-center.window__footer
+				.flex-block.flex-block_vertical-center.window__footer.zebra
 					p 1 contacts selected
 					button(type="button" title="Send to").btn.btn_send Send to
 
