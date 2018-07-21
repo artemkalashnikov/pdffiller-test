@@ -442,7 +442,7 @@ img, svg {
   .contact_active .btn.btn_contact {
     fill: #444; }
 
-.zebra:nth-child(2n) {
+.zebra {
   background-color: #fafafa; }
 
 ._hidden {
